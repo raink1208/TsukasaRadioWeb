@@ -1,0 +1,13 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+    compatibilityDate: '2024-11-01',
+    devtools: { enabled: true },
+    modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/icon'],
+    site: {
+        url: 'radio.tsukasa-kingdom.net'
+    },
+    css: [
+        'ress/ress.css',
+        "@/assets/style/reset.css",
+    ]
+})
