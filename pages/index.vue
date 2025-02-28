@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {getGuestList} from "~/domains/guest/api";
 
-const { data: newsList } = await useAsyncData('news', () => {
-  return queryCollection('news')
+const { data: newsList } = await useAsyncData("newsLimit", () => {
+  return queryCollection("news")
     .where("draft", "=", true)
     .order("newsId", "DESC")
     .limit(5)

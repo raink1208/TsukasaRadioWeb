@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useAsyncData } from "#app";
 
-const { data: archiveList } = await useAsyncData('archive', () => {
-  return queryCollection('archive')
+const { data: archiveList } = await useAsyncData("archive", () => {
+  return queryCollection("archive")
     .where("draft", "=", true)
     .order("archiveId", "DESC")
     .all();

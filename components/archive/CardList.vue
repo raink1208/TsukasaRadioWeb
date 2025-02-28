@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArchiveCollectionItem } from '@nuxt/content'
+import { ArchiveCollectionItem } from "@nuxt/content"
 
 const { archiveList } = defineProps<{
   archiveList: ArchiveCollectionItem[]

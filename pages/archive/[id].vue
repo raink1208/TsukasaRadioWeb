@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const { data: archive } = await useAsyncData(() => {
-  return queryCollection('archive')
+  return queryCollection("archive")
     .where("draft", "=", true)
     .path(route.path)
     .first()
