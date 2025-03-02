@@ -36,7 +36,7 @@ img {
 .card {
   position: relative;
   height: 160px;
-  width: 350px;
+  width: 100%;
   border: 1px solid var(--text-color);
   border-radius: 10px;
 

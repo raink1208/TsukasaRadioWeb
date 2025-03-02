@@ -1,9 +1,9 @@
 ---
 archiveId: archive0003
-title: 第一回 領国つかさの深夜通信-Dark Web-
-description: 記念すべき領国つかさの深夜通信-Dark Web-の第一回目の配信。初回配信では、企画の通称やハッシュタグを決めました。
+title: 第3回 ファミレス『ムーンパレス』へ行こう。
+description: 領国つかさおすすめのゲーム ファミレスを享受せよのプレイ配信。
 draft: true
-date: 2025-02-16
-videoId: u5y45_pIIrY
+date: 2025-03-01
+videoId: D2cFRAKiYSo
 ---
 archive3

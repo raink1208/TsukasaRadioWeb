@@ -8,9 +8,11 @@ const { guests } = defineProps<{
   <div>
     <CommonContentTitle title="Guests" />
     <div class="guest-table">
-      <div v-for="guest in guests" :key="guest.name">
+      <div class="guest-card" v-for="guest in guests" :key="guest.name">
         <GuestListItem :guest="guest" />
       </div>
+      <div class="empty guest-card" />
+      <div class="empty guest-card" />
     </div>
   </div>
 </template>
@@ -20,7 +22,16 @@ const { guests } = defineProps<{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px;
   gap: 30px;
+}
+
+.guest-card {
+  width: 350px;
+}
+
+.empty {
+  content: "";
+  display: block;
 }
 </style>

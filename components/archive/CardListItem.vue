@@ -38,9 +38,7 @@ const getContentURL = (archiveId: string) => {
 
 <style scoped>
 .card {
-  width: 400px;
-
-  border: 1px solid var(--sub-accent-color);
+  width: 100%;
   border-radius: 10px;
 }
 
