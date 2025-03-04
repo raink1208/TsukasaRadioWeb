@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Guest } from "~/domains/guest";
+
 const { guest } = defineProps<{
   guest: Guest
 }>();
@@ -12,15 +14,15 @@ const { guest } = defineProps<{
         <p class="affiliation">{{ guest.affiliation }}</p>
         <p class="name">{{ guest.name }}</p>
         <div class="urls">
-          <NuxtLink class="url-icon" :to="guest.urls.youtube">
+          <a class="url-icon" :href="guest.urls.youtube">
             <Icon name="mdi:youtube" size="30px" />
-          </NuxtLink>
-          <NuxtLink class="url-icon" :to="guest.urls.twitter">
-            <Icon name="prime:twitter" size="27px" />
-          </NuxtLink>
-          <NuxtLink class="url-icon" :to="guest.urls.official">
+          </a>
+          <a class="url-icon" :href="guest.urls.twitter">
+            <Icon name="prime:twitter" size="26px" />
+          </a>
+          <a class="url-icon" :href="guest.urls.official">
             <Icon name="mdi:link" size="30px" />
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>
@@ -37,7 +39,7 @@ img {
   position: relative;
   height: 160px;
   width: 100%;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--divider-color);
   border-radius: 10px;
 
   background-color: var(--base-sub-color);

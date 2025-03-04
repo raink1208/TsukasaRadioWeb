@@ -4,7 +4,7 @@
 
 <template>
   <div>
-
+    <CommonContentTitle title="Cast Profile" />
   </div>
 </template>
 

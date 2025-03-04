@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NewsCollectionItem } from "@nuxt/content"
+import type { NewsCollectionItem } from "@nuxt/content"
 
 const { news } = defineProps<{
   news: NewsCollectionItem

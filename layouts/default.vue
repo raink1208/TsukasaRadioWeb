@@ -20,6 +20,8 @@
   --sub-accent-color: #4C9A2A;
   --text-color: #d3d3d3;
 
+  --divider-color: rgba(255, 255, 255, 0.4);
+
   --headline-font: "BIZ UDPGothic", sans-serif;
   --text-font: "MS UI Gothic", sans-serif;
 }

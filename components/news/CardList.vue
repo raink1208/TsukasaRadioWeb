@@ -20,7 +20,7 @@ const { newsList } = defineProps<{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px 50px;
 
   margin-top: 50px;
 }

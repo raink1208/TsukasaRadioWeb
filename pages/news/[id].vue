@@ -10,12 +10,15 @@ const { data: news } = await useAsyncData(() => {
 
 <template>
   <InnerWrapper :max-size="1380">
-    <section>
+    <article v-if="news">
       <h1>{{ news.title }}</h1>
       <div class="content">
         <ContentRenderer v-if="news" :value="news" />
       </div>
-    </section>
+    </article>
+    <div v-else>
+
+    </div>
   </InnerWrapper>
 </template>
 

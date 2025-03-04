@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import {getGuestList} from "~/domains/guest/api";
+
+import {getGuestList, type Guest} from "~/domains/guest";
 
 const { data: newsList } = await useAsyncData("newsLimit", () => {
   return queryCollection("news")
@@ -24,6 +25,9 @@ onMounted(async () => {
     </section>
     <section id="news">
       <NewsThinList :newsList="newsList" />
+    </section>
+    <section id="cast">
+      <CastProfile />
     </section>
     <section id="guests">
       <GuestList :guests="guests" />
