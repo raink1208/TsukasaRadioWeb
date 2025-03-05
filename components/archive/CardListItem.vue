@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import type {ArchiveCollectionItem} from "@nuxt/content";
-
 const {archive} = defineProps<{
   archive: ArchiveCollectionItem
 }>();
-
 const getThumbnail = (videoId: string) => {
   return `http://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 }
-
 const getYouTubeLink = (videoId: string) => {
   return `https://www.youtube.com/live/${videoId}`;
 }
@@ -20,11 +17,12 @@ const getContentURL = (archiveId: string) => {
 <template>
   <div class="card">
     <div class="content">
-      <NuxtLink :to="getYouTubeLink(archive.videoId)">
+      <a :href="getYouTubeLink(archive.videoId)">
         <figure>
           <img :src="getThumbnail(archive.videoId)" alt="サムネイル"/>
+          <Icon name="icon-park-outline:play" class="play-icon"/>
         </figure>
-      </NuxtLink>
+      </a>
       <div class="body">
         <p class="title">{{ archive.title }}</p>
         <p class="description">{{ archive.description }}</p>
@@ -41,11 +39,9 @@ const getContentURL = (archiveId: string) => {
   width: 100%;
   border-radius: 10px;
 }
-
 .content {
   padding: 10px;
 }
-
 figure {
   position: relative;
   width: 100%;
@@ -53,18 +49,29 @@ figure {
   overflow: hidden;
   border-radius: 16px;
 }
-
+figure .play-icon {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  color: var(--text-color);
+  pointer-events: none;
+}
 img {
   position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: brightness(0.7);
 }
-
+img:hover {
+  filter: brightness(0.9);
+}
 .body {
   position: relative;
-  height: 150px;
   margin-top: 20px;
 }
 
@@ -77,11 +84,7 @@ img {
 }
 
 .detail-button {
-  position: absolute;
-  width: 100%;
-  bottom: 15px;
-
+  margin-top: 20px;
   text-align: center;
 }
-
 </style>
