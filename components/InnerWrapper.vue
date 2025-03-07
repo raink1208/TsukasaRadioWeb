@@ -18,4 +18,11 @@ const { maxSize } = defineProps<{
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 800px) {
+  .inner-wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 </style>

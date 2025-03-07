@@ -15,6 +15,13 @@ onMounted(async () => {
   guests.value = await getGuestList();
 });
 
+useSeoMeta({
+  title: "領国つかさの深夜通信-Dark Web- | 非公式ファンサイト",
+  description: "すぺしゃりて所属のVTuber、領国つかさによるラジオ企画【領国つかさの深夜通信-Dark Web-】の非公式ファンサイトです。",
+
+  ogTitle: "領国つかさの深夜通信-Dark Web- | 非公式ファンサイト",
+  ogDescription: "すぺしゃりて所属のVTuber、領国つかさによるラジオ企画【領国つかさの深夜通信-Dark Web-】の非公式ファンサイトです。",
+});
 </script>
 
 <template>

@@ -59,7 +59,7 @@ img {
 
 .name {
   margin-top: 8px;
-  font-family: "MS ゴシック", sans-serif;
+  font-family: var(--bold-text-font);
   font-size: 18px;
   font-weight: bold;
 }

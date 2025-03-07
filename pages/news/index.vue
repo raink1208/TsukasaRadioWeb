@@ -8,7 +8,13 @@ const { data: newsList } = await useAsyncData("news", () => {
     .all();
 });
 
+useSeoMeta({
+  title: "News",
+  description: "",
 
+  ogTitle: "News",
+  ogDescription: "",
+})
 </script>
 
 <template>

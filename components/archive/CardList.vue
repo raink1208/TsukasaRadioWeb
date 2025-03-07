@@ -26,7 +26,7 @@ const {archiveList} = defineProps<{
 }
 
 .archive-card {
-  width: 400px;
+  width: 450px;
 }
 
 .empty {

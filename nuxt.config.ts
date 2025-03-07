@@ -9,5 +9,12 @@ export default defineNuxtConfig({
     css: [
         'ress/ress.css',
         "@/assets/style/reset.css",
-    ]
+    ],
+    app: {
+        head: {
+            link: [
+                { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+            ]
+        }
+    }
 })

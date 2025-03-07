@@ -77,6 +77,9 @@ img:hover {
 
 .title {
   margin-left: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: var(--bold-text-font);
 }
 
 .description {

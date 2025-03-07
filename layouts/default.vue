@@ -24,6 +24,7 @@
 
   --headline-font: "BIZ UDPGothic", sans-serif;
   --text-font: "MS UI Gothic", sans-serif;
+  --bold-text-font: "MS ゴシック", sans-serif;
 }
 html {
   background-color: var(--base-color);

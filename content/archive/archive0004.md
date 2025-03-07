@@ -1,9 +1,9 @@
 ---
 archiveId: archive0004
-title: 第二回 深夜のお悩み相談回
+title: 第四回 深夜の大喜利大会を開催します。
 description: 領国民から募集したお悩みに真剣に回答していく放送。
 draft: true
-date: 2025-02-23
-videoId: fUb83sCxduo
+date: 2025-03-10
+videoId: XB6-suIj9dQ
 ---
 archive4

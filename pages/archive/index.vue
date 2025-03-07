@@ -7,6 +7,14 @@ const { data: archiveList } = await useAsyncData("archive", () => {
     .order("archiveId", "DESC")
     .all();
 })
+
+useSeoMeta({
+  title: "Archive",
+  description: "領国つかさの深夜通信-Dark Web-の過去放送一覧です。",
+
+  ogTitle: "Archive",
+  ogDescription: "領国つかさの深夜通信-Dark Web-の過去放送一覧です。",
+})
 </script>
 
 <template>
