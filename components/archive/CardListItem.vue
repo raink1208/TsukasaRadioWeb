@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type {ArchiveCollectionItem} from "@nuxt/content";
-const {archive} = defineProps<{
+import type { ArchiveCollectionItem } from "@nuxt/content";
+const { archive } = defineProps<{
   archive: ArchiveCollectionItem
 }>();
 const getThumbnail = (videoId: string) => {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {Guest} from "~/domains/guest";
+import type { Guest } from "~/domains/guest";
 
 const { guests } = defineProps<{
   guests: Guest[]

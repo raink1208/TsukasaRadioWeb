@@ -21,7 +21,7 @@ const formatDate = (dateStr: Date): string => {
   <NuxtLink :to="link(news.newsId)">
     <div class="card">
       <p>{{ formatDate(news.date) }}</p>
-      <p>{{news.title}}</p>
+      <p>{{ news.title }}</p>
     </div>
   </NuxtLink>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useAsyncData} from "#app";
+import { useAsyncData } from "#app";
 
 const { data: newsList } = await useAsyncData("news", () => {
   return queryCollection("news")

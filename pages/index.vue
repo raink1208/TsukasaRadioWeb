@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {getGuestList, type Guest} from "~/domains/guest";
+import { getGuestList, type Guest } from "~/domains/guest";
 
 const { data: newsList } = await useAsyncData("newsLimit", () => {
   return queryCollection("news")

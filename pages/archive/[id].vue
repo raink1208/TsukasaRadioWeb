@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {toDateString} from "~/domains/utils/date";
+import { toDateString } from "~/domains/utils/date";
 const route = useRoute();
 const { data: archive } = await useAsyncData(() => {
   return queryCollection("archive")
