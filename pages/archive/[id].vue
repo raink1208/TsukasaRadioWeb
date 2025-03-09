@@ -31,7 +31,7 @@ const getThumbnail = (videoId: string) => {
 
 <style scoped>
 .header {
-  margin-top: 80px;
+  margin-top: 50px;
   padding: 0 10px;
 }
 .header figure {
@@ -49,6 +49,9 @@ const getThumbnail = (videoId: string) => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.title {
+  margin-top: 40px;
 }
 .date {
   margin-top: 15px;
