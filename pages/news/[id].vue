@@ -6,6 +6,14 @@ const { data: news } = await useAsyncData(() => {
     .path(route.path)
     .first()
 });
+
+useSeoMeta({
+  title: `${news.value?.title} | 領国つかさの深夜通信-Dark Web-`,
+  description: "",
+
+  ogTitle: `${news.value?.title} | 領国つかさの深夜通信-Dark Web-`,
+  ogDescription: "",
+})
 </script>
 
 <template>

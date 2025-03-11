@@ -9,12 +9,13 @@ const { data: archiveList } = await useAsyncData("archive", () => {
 })
 
 useSeoMeta({
-  title: "Archive",
-  description: "領国つかさの深夜通信-Dark Web-の過去放送一覧です。",
+  title: "Archive | 領国つかさの深夜通信-Dark Web-",
+  description: "",
 
-  ogTitle: "Archive",
-  ogDescription: "領国つかさの深夜通信-Dark Web-の過去放送一覧です。",
+  ogTitle: "Archive | 領国つかさの深夜通信-Dark Web-",
+  ogDescription: "",
 })
+
 </script>
 
 <template>

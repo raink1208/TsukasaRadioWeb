@@ -10,6 +10,14 @@ const { data: archive } = await useAsyncData(() => {
 const getThumbnail = (videoId: string) => {
   return `http://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 }
+
+useSeoMeta({
+  title: `${archive.value?.title} | 領国つかさの深夜通信-Dark Web-`,
+  description: "",
+
+  ogTitle: `${archive.value?.title} | 領国つかさの深夜通信-Dark Web-`,
+  ogDescription: "",
+})
 </script>
 
 <template>

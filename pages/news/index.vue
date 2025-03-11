@@ -9,10 +9,10 @@ const { data: newsList } = await useAsyncData("news", () => {
 });
 
 useSeoMeta({
-  title: "News",
+  title: "News | 領国つかさの深夜通信-Dark Web-",
   description: "",
 
-  ogTitle: "News",
+  ogTitle: "News | 領国つかさの深夜通信-Dark Web-",
   ogDescription: "",
 })
 </script>
