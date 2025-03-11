@@ -2,7 +2,7 @@
 import type {ArchiveCollectionItem} from "@nuxt/content"
 
 const {archiveList} = defineProps<{
-  archiveList: ArchiveCollectionItem[]
+  archiveList: ArchiveCollectionItem[] | null
 }>();
 </script>
 

@@ -2,7 +2,7 @@
 import type { NewsCollectionItem } from "@nuxt/content";
 
 const { newsList } = defineProps<{
-  newsList: NewsCollectionItem[]
+  newsList: NewsCollectionItem[] | null
 }>();
 </script>
 
