@@ -8,7 +8,7 @@ const { data: archive } = await useAsyncData(() => {
       .first()
 });
 const getThumbnail = (videoId: string) => {
-  return `http://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  return `http://img.youtube.com/vi/${videoId}/sddefault.jpg`;
 }
 
 useSeoMeta({
@@ -21,7 +21,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <InnerWrapper :max-size="1380">
+  <InnerWrapper :max-size="1100">
     <article v-if="archive">
       <div class="header">
         <figure>
