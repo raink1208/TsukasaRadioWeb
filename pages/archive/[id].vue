@@ -42,6 +42,8 @@ const getThumbnail = (videoId: string) => {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
+
+  border-radius: 10px;
 }
 .header figure img {
   position: absolute;
@@ -58,5 +60,18 @@ const getThumbnail = (videoId: string) => {
 }
 .content {
   margin-top: 30px;
+}
+
+:deep(h2), :deep(h3), :deep(h4), :deep(h5), :deep(h6), :deep(p) {
+  margin: revert;
+}
+
+:deep(p) {
+  font-family: revert;
+}
+
+:deep(a) {
+  text-decoration: none;
+  color: #1d9bf0;
 }
 </style>
