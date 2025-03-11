@@ -1,0 +1,1 @@
+import{a as e}from"./BtfVL5LD.js";import{d as o,c as t,i as n}from"./Bun_O5Wy.js";const p=o({__name:"index",setup(r){return e({title:"Info | 領国つかさの深夜通信-Dark Web-",description:"",ogTitle:"Info | 領国つかさの深夜通信-Dark Web-",ogDescription:""}),(a,i)=>(n(),t("div"))}});export{p as default};
