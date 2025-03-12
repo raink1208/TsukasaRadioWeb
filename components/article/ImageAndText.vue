@@ -24,6 +24,10 @@ const { imgPath, alt } = defineProps<{
   gap: 20px;
 }
 
+.content {
+  margin-top: 10px;
+}
+
 .image {
   width: calc(55% - 10px);
 }
@@ -34,5 +38,20 @@ const { imgPath, alt } = defineProps<{
 
 figure img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .content {
+    width: revert;
+  }
+
+  .image {
+    order: -1;
+    width: revert;
+  }
 }
 </style>
