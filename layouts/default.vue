@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -19,23 +18,28 @@
   --accent-color: #B92E46;
   --sub-accent-color: #4C9A2A;
   --text-color: #d3d3d3;
-
   --divider-color: rgba(255, 255, 255, 0.4);
-
   --headline-font: "BIZ UDPGothic", sans-serif;
-  --text-font: "MS UI Gothic", sans-serif;
-  --bold-text-font: "MS ゴシック", sans-serif;
+  --text-font: "Meiryo UI", sans-serif;
+  --article-font: "Meiryo", sans-serif;
+  --bold-text-font: "BIZ UDPGothic", sans-serif;
 }
+
 html {
   background-color: var(--base-color);
   font-size: 18px;
 }
+
 html, p {
   color: var(--text-color);
-  font-family: var(--text-font);
 }
-h2 {
+
+h2, h3 {
   font-family: var(--headline-font);
+}
+
+p {
+  font-family: var(--text-font);
 }
 
 a {

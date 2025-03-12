@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { toDateString } from "~/domains/utils/date";
+
 const route = useRoute();
+
 const { data: archive } = await useAsyncData(() => {
   return queryCollection("archive")
       .where("draft", "=", true)
       .path(route.path)
       .first()
 });
+
 const getThumbnail = (videoId: string) => {
   return `http://img.youtube.com/vi/${videoId}/sddefault.jpg`;
 }
@@ -42,17 +45,17 @@ useSeoMeta({
   margin-top: 50px;
   padding: 0 10px;
 }
+
 .header figure {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
-
   border-radius: 10px;
 }
+
 .header figure img {
   position: absolute;
   width: 100%;
@@ -60,12 +63,15 @@ useSeoMeta({
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .title {
   margin-top: 40px;
 }
+
 .date {
   margin-top: 15px;
 }
+
 .content {
   margin-top: 30px;
 }
@@ -74,8 +80,12 @@ useSeoMeta({
   margin: revert;
 }
 
+:deep(h3) {
+  font-weight: bold;
+}
+
 :deep(p) {
-  font-family: revert;
+  font-family: var(--article-font);
 }
 
 :deep(a) {

@@ -29,12 +29,12 @@ const formatDate = (dateStr: Date): string => {
 <style scoped>
 .card {
   position: relative;
-  height: 60px;
+  height: 70px;
   border: 1px solid var(--accent-color);
   padding: 10px 16px 10px 32px;
-
   transition: 0.3s;
 }
+
 .card::before {
   position: absolute;
   content: "";
@@ -44,9 +44,9 @@ const formatDate = (dateStr: Date): string => {
   width: 16px;
   height: 100%;
 }
+
 .card:hover {
   transform: translateY(-4px);
   transition: 0.3s;
 }
-
 </style>
