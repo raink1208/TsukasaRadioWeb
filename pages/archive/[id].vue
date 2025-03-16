@@ -43,7 +43,7 @@ useSeoMeta({
 <style scoped>
 .header {
   margin-top: 50px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .header figure {
@@ -74,6 +74,10 @@ useSeoMeta({
 
 .content {
   margin-top: 30px;
+}
+
+:deep(h2), :deep(h3), :deep(h4), :deep(h5), :deep(h6) {
+  padding: 0 10px;
 }
 
 :deep(h2), :deep(h3), :deep(h4), :deep(h5), :deep(h6), :deep(p) {
