@@ -17,13 +17,14 @@ videoId: u5y45_pIIrY
 ### ロゴの紹介
 本企画のロゴの制作者は、ファッションセンター(ゑ)様([@RadioWaveDOLL](https://x.com/RadioWaveDOLL))
 
-ロゴにも種類がありこだわりを感じるものになっています
+::ArticleQuoteTweet{tweetId="1891444491870937231"}  
+::
+
 ### 企画の通称、ハッシュタグが決定
 ::ArticleImageAndText{imgPath="/img/archive/archive0001-001.png" alt="通称、ハッシュタグ決定"}
 通称：つか通
 
 ハッシュタグ：#領国つかさの深夜通信DW
 ::
-
 
 ## ■企画会議
