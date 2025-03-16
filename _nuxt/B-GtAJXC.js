@@ -1,0 +1,1 @@
+import{_ as e}from"./Dikuo2gR.js";import{d as n,B as _,i as s,w as a,g as p,t as r,j as c}from"./6O2L4paQ.js";const m=n({__name:"Button",props:{to:{},text:{}},setup(i){return(t,u)=>{const o=e;return s(),_(o,{to:t.to},{default:a(()=>[p("p",null,r(t.text),1)]),_:1},8,["to"])}}}),d=c(m,[["__scopeId","data-v-530549ff"]]);export{d as _};
