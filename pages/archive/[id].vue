@@ -24,7 +24,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <InnerWrapper :max-size="1100">
+  <InnerWrapper :max-size="1200">
     <article v-if="archive">
       <div class="header">
         <figure>

@@ -22,6 +22,8 @@ const { imgPath, alt } = defineProps<{
 .row {
   display: flex;
   gap: 20px;
+
+  margin-top: 20px;
 }
 
 .content {
