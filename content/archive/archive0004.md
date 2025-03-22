@@ -18,7 +18,32 @@ videoId: XB6-suIj9dQ
 
 ## 印章に残った回答のピックアップ
 ### お題1: この深夜ラジオ、絶対に何かおかしい...その理由とは？
+::ArticleImageAndText{imgPath="/img/archive/0004/002.png" alt=""}
+
+::
+
+::ArticleImageAndText{imgPath="/img/archive/0004/001.png" alt=""}
+
+::
 
 ### お題2: カップラーメンの新商品「謎すぎる味」どんな味？
+::ArticleImageAndText{imgPath="/img/archive/0004/003.png" alt=""}
+
+::
+
+::ArticleImageAndText{imgPath="/img/archive/0004/004.png" alt=""}
+
+::
+
+::ArticleImageAndText{imgPath="/img/archive/0004/005.png" alt=""}
+
+::
 
 ### お題3: 陰キャが陽キャに転生、最初に何をする？
+::ArticleImageAndText{imgPath="/img/archive/0004/006.png" alt=""}
+
+::
+
+::ArticleImageAndText{imgPath="/img/archive/0004/007.png" alt=""}
+
+::
