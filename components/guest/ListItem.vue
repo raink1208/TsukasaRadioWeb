@@ -14,13 +14,13 @@ const { guest } = defineProps<{
         <p class="affiliation">{{ guest.affiliation }}</p>
         <p class="name">{{ guest.name }}</p>
         <div class="urls">
-          <a class="url-icon" :href="guest.urls.youtube">
+          <a class="url-icon" :href="guest.urls.youtube" target="_blank">
             <Icon name="mdi:youtube" size="30px" />
           </a>
-          <a class="url-icon" :href="guest.urls.twitter">
+          <a class="url-icon" :href="guest.urls.twitter" target="_blank">
             <Icon name="prime:twitter" size="26px" />
           </a>
-          <a class="url-icon" :href="guest.urls.official">
+          <a class="url-icon" :href="guest.urls.official" target="_blank">
             <Icon name="mdi:link" size="30px" />
           </a>
         </div>
