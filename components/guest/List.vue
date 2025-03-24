@@ -40,6 +40,7 @@ const { guests } = defineProps<{
 @media screen and (max-width: 875px) {
   .guest-table {
     display: revert;
+    margin: 20px 0;
   }
 
   .guest-card {
