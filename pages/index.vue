@@ -11,6 +11,8 @@ const { data: newsList } = await useAsyncData("newsLimit", () => {
 });
 const guests = ref<Guest[]>([]);
 
+const { bgmOverlay, hideOverlay } = useBGMOverlay();
+
 onMounted(async () => {
   guests.value = await getGuestList();
 });
@@ -25,6 +27,7 @@ useSeoMeta({
 </script>
 
 <template>
+  <AudioPlaySelect @hideOverlay="hideOverlay" v-if="bgmOverlay" />
   <InnerWrapper>
     <h1>領国つかさの深夜通信-Dark Web-</h1>
     <section id="schedule">
