@@ -4,7 +4,3 @@ interface TwitterWidgets {
         load: () => void;
     };
 }
-
-interface Window {
-    twttr: TwitterWidgets;
-}
