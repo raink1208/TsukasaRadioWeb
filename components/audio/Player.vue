@@ -4,7 +4,7 @@ const audio = ref<HTMLAudioElement>();
 
 onMounted(() => {
   if (audio.value) {
-    audio.value.volume = 0.05;
+    audio.value.volume = 0.01;
   }
 });
 
