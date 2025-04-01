@@ -27,8 +27,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <AudioPlaySelect @hideOverlay="hideOverlay" v-if="bgmOverlay" />
-  <InnerWrapper v-else>
+  <AudioPlaySelect @hideOverlay="hideOverlay" v-show="bgmOverlay" />
+  <InnerWrapper v-show="!bgmOverlay">
     <h1>領国つかさの深夜通信-Dark Web-</h1>
     <section id="schedule">
       <ScheduleView />
