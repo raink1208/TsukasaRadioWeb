@@ -4,10 +4,10 @@ import { getGuestList, type Guest } from "~/domains/guest";
 
 const { data: newsList } = await useAsyncData("newsLimit", () => {
   return queryCollection("news")
-    .where("draft", "=", true)
-    .order("newsId", "DESC")
-    .limit(5)
-    .all();
+      .where("draft", "=", true)
+      .order("newsId", "DESC")
+      .limit(5)
+      .all();
 });
 const guests = ref<Guest[]>([]);
 
@@ -28,21 +28,34 @@ useSeoMeta({
 
 <template>
   <AudioPlaySelect @hideOverlay="hideOverlay" v-show="bgmOverlay" />
-  <InnerWrapper v-show="!bgmOverlay">
+  <div v-show="!bgmOverlay">
     <h1>領国つかさの深夜通信-Dark Web-</h1>
     <section id="schedule">
-      <ScheduleView />
+      <InnerWrapper>
+        <ScheduleView />
+      </InnerWrapper>
     </section>
     <section id="news">
-      <NewsThinList :newsList="newsList" />
+      <InnerWrapper>
+        <NewsThinList :newsList="newsList" />
+      </InnerWrapper>
     </section>
     <section id="cast">
-      <CastProfile />
+      <InnerWrapper>
+        <CastProfile />
+      </InnerWrapper>
     </section>
     <section id="guests">
-      <GuestList :guests="guests" />
+      <InnerWrapper>
+        <GuestList :guests="guests" />
+      </InnerWrapper>
     </section>
-  </InnerWrapper>
+    <section id="info">
+      <InnerWrapper>
+        <InfoView />
+      </InnerWrapper>
+    </section>
+  </div>
 </template>
 
 <style scoped>
@@ -50,4 +63,9 @@ section {
   margin-top: 40px;
 }
 
+#info {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #2f2f2f;
+}
 </style>
