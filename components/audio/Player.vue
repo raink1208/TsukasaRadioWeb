@@ -14,6 +14,7 @@ const play = () => {
     return;
   }
 
+  audio.value.currentTime = 0;
   audio.value.play();
 }
 
