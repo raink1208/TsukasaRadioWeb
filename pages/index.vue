@@ -40,6 +40,11 @@ useSeoMeta({
         <NewsThinList :newsList="newsList" />
       </InnerWrapper>
     </section>
+    <section id="about">
+      <InnerWrapper>
+        <AboutView />
+      </InnerWrapper>
+    </section>
     <section id="cast">
       <InnerWrapper>
         <CastProfile />

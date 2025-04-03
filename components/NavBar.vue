@@ -19,11 +19,6 @@
         Archive
       </NuxtLink>
     </li>
-    <li>
-      <NuxtLink class="link" to="/info/">
-        Info
-      </NuxtLink>
-    </li>
   </ul>
 </template>
 

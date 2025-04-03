@@ -21,8 +21,8 @@ const handleBGMOff = () => {
       <div class="controls">
         <h3>SOUND</h3>
         <div class="buttons">
-          <button @click="handleBGMOn">On</button>
-          <button @click="handleBGMOff">Off</button>
+          <button @click="handleBGMOn">On<Icon name="material-symbols:volume-up" size="25px" /></button>
+          <button @click="handleBGMOff">Off<Icon name="material-symbols:volume-off" size="25px" /></button>
         </div>
       </div>
     </div>
@@ -66,10 +66,21 @@ h2 {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 button {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 110px;
+  padding: 10px 0;
+
+  border: 1px solid var(--sub-accent-color);
+  border-radius: 10px;
 }
 </style>
