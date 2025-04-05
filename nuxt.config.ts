@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     site: {
         url: 'radio.tsukasa-kingdom.net'
     },
+    build: {
+        transpile: ['gsap']
+    },
     css: [
         'ress/ress.css',
         "@/assets/style/reset.css",
@@ -14,7 +17,10 @@ export default defineNuxtConfig({
         head: {
             link: [
                 { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-            ]
+            ],
+            htmlAttrs: {
+                lang: 'ja',
+            }
         }
     },
     content: {

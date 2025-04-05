@@ -29,7 +29,7 @@ useSeoMeta({
 <template>
   <AudioPlaySelect @hideOverlay="hideOverlay" v-show="bgmOverlay" />
   <div v-show="!bgmOverlay">
-    <h1>領国つかさの深夜通信-Dark Web-</h1>
+    <FirstView :isVisible="!bgmOverlay"/>
     <section id="schedule">
       <InnerWrapper>
         <ScheduleView />
