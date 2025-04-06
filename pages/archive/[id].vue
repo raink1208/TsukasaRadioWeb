@@ -10,9 +10,6 @@ const { data: archive } = await useAsyncData(`${route.params.id}`, () => {
       .first();
 });
 
-console.log(route.params.id);
-console.log(archive.value);
-
 const getThumbnail = (videoId: string) => {
   return `http://img.youtube.com/vi/${videoId}/sddefault.jpg`;
 }
