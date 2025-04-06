@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const route = useRoute();
-const { data: news } = await useAsyncData(() => {
+const { data: news } = await useAsyncData(`${route.params.id}`, () => {
   return queryCollection("news")
-    .where("draft", "=", true)
-    .path(route.path)
-    .first()
+      .where("draft", "=", true)
+      .where("newsId", "=", route.params.id)
+      .first()
 });
 
 useSeoMeta({

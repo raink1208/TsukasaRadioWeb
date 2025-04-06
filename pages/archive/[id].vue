@@ -3,12 +3,15 @@ import { toDateString } from "~/domains/utils/date";
 
 const route = useRoute();
 
-const { data: archive } = await useAsyncData(() => {
+const { data: archive } = await useAsyncData(`${route.params.id}`, () => {
   return queryCollection("archive")
       .where("draft", "=", true)
-      .path(route.path)
-      .first()
+      .where("archiveId", "=", route.params.id)
+      .first();
 });
+
+console.log(route.params.id);
+console.log(archive.value);
 
 const getThumbnail = (videoId: string) => {
   return `http://img.youtube.com/vi/${videoId}/sddefault.jpg`;
