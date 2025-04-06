@@ -34,5 +34,10 @@ export default defineNuxtConfig({
                 h6: false,
             }
         }
+    },
+    icon: {
+        serverBundle: {
+            collections: ['mdi', 'prime', 'material-symbols', 'icon-park-outline']
+        }
     }
 })
