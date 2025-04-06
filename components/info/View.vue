@@ -33,15 +33,15 @@
         <h3>サイト情報</h3>
         <dl>
           <dt>ヘッダーイラスト</dt>
-          <dd>海鼠様 (<a href="https://twitter.com/NAMCOOo">@NAMCOOo</a>)</dd>
+          <dd>海鼠様 (<a href="https://twitter.com/NAMCOOo" target="_blank">@NAMCOOo</a>)</dd>
         </dl>
         <dl>
           <dt>サイトBGM</dt>
-          <dd>どるふぃん様 (<a href="https://twitter.com/2ndHorizon1">@2ndHorizon1</a>)</dd>
+          <dd>どるふぃん様 (<a href="https://twitter.com/2ndHorizon1" target="_blank">@2ndHorizon1</a>)</dd>
         </dl>
         <dl>
           <dt>サイト制作</dt>
-          <dd>rain1208 (<a href="https://twitter.com/rain1208_v">@rain1208_v</a>)</dd>
+          <dd>rain1208 (<a href="https://twitter.com/rain1208_v" target="_blank">@rain1208_v</a>)</dd>
         </dl>
       </div>
     </div>

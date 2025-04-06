@@ -7,7 +7,7 @@
     <CommonContentTitle title="Cast Profile" />
     <div class="profile">
       <div class="picture">
-        <img class="" alt="プロフィール写真">
+        <img src="/img/tsukasa.png" alt="プロフィール写真">
       </div>
       <div class="content">
 
@@ -19,5 +19,17 @@
 <style scoped>
 .profile {
   display: flex;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.profile>div {
+  width: calc(50% - 20px);
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
 }
 </style>
