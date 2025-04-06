@@ -4,10 +4,10 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/icon'],
     site: {
-        url: 'radio.tsukasa-kingdom.net'
+        url: 'radio.tsukasa-kingdom.net',
     },
     build: {
-        transpile: ['gsap']
+        transpile: ['gsap'],
     },
     css: [
         'ress/ress.css',
@@ -37,12 +37,12 @@ export default defineNuxtConfig({
     },
     icon: {
         serverBundle: {
-            collections: ['mdi', 'prime', 'material-symbols', 'icon-park-outline']
+            collections: ['mdi', 'prime', 'material-symbols', 'icon-park-outline'],
         },
         clientBundle: {
             icons: ['mdi', 'prime', 'material-symbols', 'icon-park-outline'],
             scan: true,
-            sizeLimitKb: 256
+            sizeLimitKb: 256,
         }
     }
 })

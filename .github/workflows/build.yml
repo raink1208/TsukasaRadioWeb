@@ -20,12 +20,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 21
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Generate Page
-        run: npm run generate
+        run: pnpm run generate
 
       - name: Push to release branch
         uses: JamesIves/github-pages-deploy-action@v4
