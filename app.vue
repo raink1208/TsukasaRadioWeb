@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type {AudioPlayerExpose} from "~/domains/interface/AudioPlayerExpose";
 
+const { bgmOverlay, hideOverlay } = useBGMOverlay();
+
 const audioPlayer = ref<AudioPlayerExpose>();
 
 const play = () => {
@@ -16,7 +18,8 @@ provide("pauseBGM", pause);
 </script>
 
 <template>
-  <div>
+  <AudioPlaySelect @hideOverlay="hideOverlay" v-show="bgmOverlay" />
+  <div v-show="!bgmOverlay">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

@@ -11,7 +11,7 @@ const { data: newsList } = await useAsyncData("newsLimit", () => {
 });
 const guests = ref<Guest[]>([]);
 
-const { bgmOverlay, hideOverlay } = useBGMOverlay();
+const { bgmOverlay } = useBGMOverlay();
 
 onMounted(async () => {
   guests.value = await getGuestList();
@@ -27,40 +27,37 @@ useSeoMeta({
 </script>
 
 <template>
-  <AudioPlaySelect @hideOverlay="hideOverlay" v-show="bgmOverlay" />
-  <div v-show="!bgmOverlay">
-    <FirstView :isVisible="!bgmOverlay"/>
-    <section id="schedule">
-      <InnerWrapper>
-        <ScheduleView />
-      </InnerWrapper>
-    </section>
-    <section id="news">
-      <InnerWrapper>
-        <NewsThinList :newsList="newsList" />
-      </InnerWrapper>
-    </section>
-    <section id="about">
-      <InnerWrapper>
-        <AboutView />
-      </InnerWrapper>
-    </section>
-    <section id="cast">
-      <InnerWrapper>
-        <CastProfile />
-      </InnerWrapper>
-    </section>
-    <section id="guests">
-      <InnerWrapper>
-        <GuestList :guests="guests" />
-      </InnerWrapper>
-    </section>
-    <section id="info">
-      <InnerWrapper>
-        <InfoView />
-      </InnerWrapper>
-    </section>
-  </div>
+  <FirstView :isVisible="!bgmOverlay"/>
+  <section id="schedule">
+    <InnerWrapper>
+      <ScheduleView/>
+    </InnerWrapper>
+  </section>
+  <section id="news">
+    <InnerWrapper>
+      <NewsThinList :newsList="newsList"/>
+    </InnerWrapper>
+  </section>
+  <section id="about">
+    <InnerWrapper>
+      <AboutView/>
+    </InnerWrapper>
+  </section>
+  <section id="cast">
+    <InnerWrapper>
+      <CastProfile/>
+    </InnerWrapper>
+  </section>
+  <section id="guests">
+    <InnerWrapper>
+      <GuestList :guests="guests"/>
+    </InnerWrapper>
+  </section>
+  <section id="info">
+    <InnerWrapper>
+      <InfoView/>
+    </InnerWrapper>
+  </section>
 </template>
 
 <style scoped>
