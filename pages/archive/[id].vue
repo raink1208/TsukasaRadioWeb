@@ -96,4 +96,8 @@ useSeoMeta({
   text-decoration: none;
   color: #1d9bf0;
 }
+
+:deep(li) {
+  margin-top: 15px;
+}
 </style>
