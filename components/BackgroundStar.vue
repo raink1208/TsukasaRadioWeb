@@ -12,9 +12,7 @@ const starTypes = [
 ];
 
 onMounted(() => {
-  for (let i = 0; i <= 400; i++) {
-    createStar();
-  }
+  createStar(300);
 })
 
 const getRandomStarColor = () => {
@@ -31,37 +29,43 @@ const getRandomStarColor = () => {
   return '#FFFFFF';
 };
 
-const createStar = () => {
-  const starEl = document.createElement("span");
-  starEl.className = "star";
+const createStar = (count: number) => {
+  if (!stars.value) return;
+  const fragment = document.createDocumentFragment();
 
-  const sizeProbability = Math.random();
-  let size;
+  for (let i = 0; i <= count; i++) {
+    const starEl = document.createElement("span");
+    starEl.className = "star";
 
-  if (sizeProbability > 0.995) {
-    size = Math.random() * (4 - 3) + 3;
-  } else if (sizeProbability > 0.97) {
-    size = Math.random() * (3 - 2) + 2;
-  } else if (sizeProbability > 0.85) {
-    size = Math.random() * (2 - 1.3) + 1.3;
-  } else {
-    size = Math.random() * (1.3 - 0.8) + 0.8;
+    const sizeProbability = Math.random();
+    let size;
+
+    if (sizeProbability > 0.995) {
+      size = Math.random() * (4 - 3) + 3;
+    } else if (sizeProbability > 0.97) {
+      size = Math.random() * (3 - 2) + 2;
+    } else if (sizeProbability > 0.85) {
+      size = Math.random() * (2 - 1.3) + 1.3;
+    } else {
+      size = Math.random() * (1.3 - 0.8) + 0.8;
+    }
+
+    starEl.style.width = `${size}px`;
+    starEl.style.height = `${size}px`;
+    starEl.style.left = `${Math.random() * 100}%`;
+    starEl.style.top = `${Math.random() * 100}%`;
+
+    starEl.style.animationDelay = `${Math.random() * 15}s`;
+    starEl.style.animationDuration = `${Math.random() * 5 + 3}s`;
+
+    const starColor = getRandomStarColor();
+    starEl.style.backgroundColor = starColor;
+
+    starEl.style.boxShadow = `0 0 ${size + 1}px ${size / 2}px ${starColor}40`;
+
+    fragment.appendChild(starEl);
   }
-
-  starEl.style.width = `${size}px`;
-  starEl.style.height = `${size}px`;
-  starEl.style.left = `${Math.random() * 100}%`;
-  starEl.style.top = `${Math.random() * 100}%`;
-
-  starEl.style.animationDelay = `${Math.random() * 15}s`;
-  starEl.style.animationDuration = `${Math.random() * 5 + 3}s`;
-
-  const starColor = getRandomStarColor();
-  starEl.style.backgroundColor = starColor;
-
-  starEl.style.boxShadow = `0 0 ${size + 1}px ${size / 2}px ${starColor}40`;
-
-  stars.value?.appendChild(starEl);
+  stars.value.appendChild(fragment);
 };
 </script>
 
