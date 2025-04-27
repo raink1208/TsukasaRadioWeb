@@ -1,2 +1,0 @@
-const a=['.guest-table[data-v-b205b540]{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin:20px}.guest-card[data-v-b205b540]{width:350px}.empty[data-v-b205b540]{content:"";display:block}@media screen and (max-width:875px){.guest-table[data-v-b205b540]{display:revert;margin:20px 0}.guest-card[data-v-b205b540]{margin-top:15px;width:100%}}'];export{a as default};
-//# sourceMappingURL=List-styles.N7lGL1ea.mjs.map

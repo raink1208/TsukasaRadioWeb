@@ -1,2 +1,0 @@
-import{v as e}from"./server.mjs";import{s as t}from"../routes/renderer.mjs";import"../nitro/nitro.mjs";const r=e.defineComponent({__name:"QuoteTweet",__ssrInlineRender:!0,props:{tweetId:{}},setup(r){const o=e.ref();return(r,s,n,m)=>{s(`<div${t(e.mergeProps({class:"container",ref_key:"tweetContainerRef",ref:o},m))}></div>`)}}}),o=r.setup;r.setup=(t,r)=>{const s=e.useSSRContext();return(s.modules||(s.modules=new Set)).add("components/article/QuoteTweet.vue"),o?o(t,r):void 0};export{r as default};
-//# sourceMappingURL=QuoteTweet.vue.mjs.map

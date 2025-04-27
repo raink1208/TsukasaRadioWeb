@@ -1,2 +1,0 @@
-const a=['.card[data-v-3dae7446]{border:1px solid var(--accent-color);height:70px;padding:10px 16px 10px 32px;position:relative;transition:.3s}.card[data-v-3dae7446]:before{background-color:var(--accent-color);content:"";height:100%;left:0;position:absolute;top:0;width:16px}.card[data-v-3dae7446]:hover{transform:translateY(-4px);transition:.3s}'];export{a as default};
-//# sourceMappingURL=CardListItem-styles.BWhPy9Za.mjs.map
