@@ -1,0 +1,2 @@
+const a=[".row[data-v-6d191e06]{display:flex;gap:20px;margin-top:20px}.content[data-v-6d191e06]{margin-top:10px}.image[data-v-6d191e06]{width:calc(55% - 10px)}.content[data-v-6d191e06]{width:calc(45% - 10px)}figure img[data-v-6d191e06]{width:100%}@media screen and (max-width:768px){.row[data-v-6d191e06]{flex-direction:column}.content[data-v-6d191e06],.image[data-v-6d191e06]{width:revert}.image[data-v-6d191e06]{order:-1}}"];export{a as default};
+//# sourceMappingURL=ImageAndText-styles.BQitHMKO.mjs.map

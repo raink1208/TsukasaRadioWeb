@@ -1,0 +1,2 @@
+const t=".star-container{bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;z-index:-1}.stars{height:100svh;left:0;overflow:hidden;position:sticky;top:0;width:100%}.star{animation:twinkle infinite;border-radius:50%;display:block;opacity:0;position:absolute}@keyframes twinkle{0%{opacity:.2}50%{opacity:1;transform:scale(1.1)}to{opacity:.2;transform:scale(1)}}";export{t as B};
+//# sourceMappingURL=BackgroundStar-styles-1.mjs.mjs.map

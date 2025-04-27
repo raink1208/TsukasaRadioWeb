@@ -1,0 +1,2 @@
+const t=[".fv[data-v-8229f819]{align-items:center;background-color:gray;display:flex;height:800px;justify-content:flex-start;margin:0;overflow:hidden;position:relative;width:100%}.chara[data-v-8229f819]{background-color:green;bottom:0;display:block;height:650px;right:6vw;transform-origin:right;width:450px}.chara[data-v-8229f819],.title[data-v-8229f819]{position:absolute}.title[data-v-8229f819]{left:10%;top:20%}"];export{t as default};
+//# sourceMappingURL=FirstView-styles.CYRGi4up.mjs.map

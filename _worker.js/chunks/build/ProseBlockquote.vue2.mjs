@@ -1,0 +1,2 @@
+import{_ as o,v as s}from"./server.mjs";import{s as e,i as t}from"../routes/renderer.mjs";import"../nitro/nitro.mjs";const n={};const r=n.setup;n.setup=(o,e)=>{const t=s.useSSRContext();return(t.modules||(t.modules=new Set)).add("node_modules/.pnpm/@nuxtjs+mdc@0.16.1_magicast@0.3.5/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue"),r?r(o,e):void 0};const u=o(n,[["ssrRender",function(o,s,n,r){s(`<blockquote${e(r)}>`),t(o.$slots,"default",{},null,s,n),s("</blockquote>")}]]);export{u as default};
+//# sourceMappingURL=ProseBlockquote.vue2.mjs.map

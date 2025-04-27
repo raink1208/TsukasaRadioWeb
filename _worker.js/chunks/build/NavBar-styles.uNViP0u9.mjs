@@ -1,0 +1,2 @@
+const a=[".nav-bar[data-v-956f7b51]{align-items:center;background-color:var(--base-sub-color);display:flex;gap:20px;height:70px;justify-content:center}.nav-bar li[data-v-956f7b51]{font-family:var(--headline-font);font-size:24px;text-align:center;width:130px}.link[data-v-956f7b51],.nav-bar li[data-v-956f7b51]{display:flex;height:100%}.link[data-v-956f7b51]{align-items:center;justify-content:center;width:100%}"];export{a as default};
+//# sourceMappingURL=NavBar-styles.uNViP0u9.mjs.map

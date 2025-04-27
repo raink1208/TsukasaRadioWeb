@@ -1,0 +1,2 @@
+import{_ as s,v as e}from"./server.mjs";import{s as t,i as o}from"../routes/renderer.mjs";import"../nitro/nitro.mjs";const r={};const n=r.setup;r.setup=(s,t)=>{const o=e.useSSRContext();return(o.modules||(o.modules=new Set)).add("node_modules/.pnpm/@nuxtjs+mdc@0.16.1_magicast@0.3.5/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue"),n?n(s,t):void 0};const m=s(r,[["ssrRender",function(s,e,r,n){e(`<tr${t(n)}>`),o(s.$slots,"default",{},null,e,r),e("</tr>")}]]);export{m as default};
+//# sourceMappingURL=ProseTr.vue2.mjs.map
