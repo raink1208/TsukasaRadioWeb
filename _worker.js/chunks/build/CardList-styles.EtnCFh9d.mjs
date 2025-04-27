@@ -1,2 +1,2 @@
-const a=['.news-table[data-v-9bbebc62]{display:flex;flex-wrap:wrap;gap:25px 50px;justify-content:center;margin-top:50px}.news-card[data-v-9bbebc62]{width:500px}.empty[data-v-9bbebc62]{content:"";display:block}'];export{a as default};
+const a=['.archive-table[data-v-520dbda3]{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:40px}.archive-card[data-v-520dbda3]{width:450px}.empty[data-v-520dbda3]{content:"";display:block}'];export{a as default};
 //# sourceMappingURL=CardList-styles.EtnCFh9d.mjs.map
