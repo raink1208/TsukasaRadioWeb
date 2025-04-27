@@ -1,9 +1,14 @@
 import axios from "axios";
 import type { Guest } from "~/domains/guest/Guest";
 
-const guestFilePath = "/data/guests.json";
+const guestsURL = "https://tsukasa-radio-api.kkouga1208.workers.dev/guests";
 
 export async function getGuestList(): Promise<Guest[]> {
-    const guests = await axios.get<Guest[]>(guestFilePath);
+    const userId = localStorage.getItem("userId");
+    const guests = await axios.get<Guest[]>(guestsURL, {
+        params: {
+            uid: userId,
+        }
+    });
     return guests.data;
 }

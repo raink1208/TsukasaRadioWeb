@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/icon'],
     site: {
-        url: 'radio.tsukasa-kingdom.net',
+        url: 'https://radio.tsukasa-kingdom.net',
     },
     build: {
         transpile: ['gsap'],
