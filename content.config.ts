@@ -23,6 +23,7 @@ export default defineContentConfig({
                 draft: z.boolean(),
                 date: z.date(),
                 videoId: z.string(),
+                tags: z.string().array(),
             })
         })
     }

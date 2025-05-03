@@ -5,4 +5,5 @@ description: archive template
 draft: true
 date: 2025-03-30
 videoId: jmWbRzlD9e4
+tags: ['雑談']
 ---
