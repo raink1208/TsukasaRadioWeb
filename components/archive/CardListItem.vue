@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import type { ArchiveCollectionItem } from "@nuxt/content";
+
 const { archive } = defineProps<{
-  archive: ArchiveCollectionItem
+  archive: ArchiveCollectionItem;
 }>();
-const getThumbnail = (videoId: string) => {
-  return `http://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-}
-const getYouTubeLink = (videoId: string) => {
-  return `https://www.youtube.com/live/${videoId}`;
-}
-const getContentURL = (archiveId: string) => {
-  return `/archive/${archiveId}`;
-}
+
+const getThumbnail = (videoId: string) =>
+    `http://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+const getYouTubeLink = (videoId: string) =>
+    `https://www.youtube.com/live/${videoId}`;
+
+const getContentURL = (archiveId: string) => `/archive/${archiveId}`;
 </script>
 
 <template>
@@ -19,15 +19,15 @@ const getContentURL = (archiveId: string) => {
     <div class="content">
       <a :href="getYouTubeLink(archive.videoId)">
         <figure>
-          <img :src="getThumbnail(archive.videoId)" alt="サムネイル"/>
-          <Icon name="icon-park-outline:play" class="play-icon"/>
+          <img :src="getThumbnail(archive.videoId)" alt="サムネイル" />
+          <Icon name="icon-park-outline:play" class="play-icon" />
         </figure>
       </a>
       <div class="body">
         <p class="title">{{ archive.title }}</p>
         <p class="description">{{ archive.description }}</p>
         <div class="detail-button">
-          <CommonButton :to="getContentURL(archive.archiveId)" text="詳細を見る"/>
+          <CommonButton :to="getContentURL(archive.archiveId)" text="詳細を見る" />
         </div>
       </div>
     </div>
@@ -39,9 +39,11 @@ const getContentURL = (archiveId: string) => {
   width: 100%;
   border-radius: 10px;
 }
+
 .content {
   padding: 10px;
 }
+
 figure {
   position: relative;
   width: 100%;
@@ -49,9 +51,10 @@ figure {
   overflow: hidden;
   border-radius: 16px;
 }
+
 figure .play-icon {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
@@ -59,6 +62,7 @@ figure .play-icon {
   color: var(--text-color);
   pointer-events: none;
 }
+
 img {
   position: absolute;
   width: 100%;
@@ -67,12 +71,16 @@ img {
   transform: translate(-50%, -50%);
   filter: brightness(0.7);
 }
+
 img:hover {
   filter: brightness(0.9);
 }
+
 .body {
-  position: relative;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
 }
 
 .title {
@@ -87,7 +95,7 @@ img:hover {
 }
 
 .detail-button {
-  margin-top: 20px;
+  margin-top: auto;
   text-align: center;
 }
 </style>

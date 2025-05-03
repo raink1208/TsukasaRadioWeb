@@ -23,14 +23,16 @@ const {archiveList} = defineProps<{
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .archive-card {
   width: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .empty {
-  content: "";
-  display: block;
+  visibility: hidden;
 }
 </style>
