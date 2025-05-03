@@ -5,6 +5,7 @@ description: 記念すべき領国つかさの深夜通信-Dark Web-の第一回
 draft: true
 date: 2025-02-16
 videoId: u5y45_pIIrY
+tags: ['雑談']
 ---
 ## ■癒しの深夜放送！領国つかさの新企画「領国つかさの深夜通信-Dark Web-」がスタート
 
