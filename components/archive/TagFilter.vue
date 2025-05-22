@@ -34,13 +34,16 @@ defineProps<{
 }
 .tag-filter button {
   padding: 0.4rem 0.8rem;
-  border: 1px solid #ccc;
-  background-color: white;
+  border: 1px solid #414141;
+  border-radius: 10px;
+  background-color: #414141;
+  color: #eaeaea;
   cursor: pointer;
 }
+
 .tag-filter button.active {
-  background-color: #333;
-  color: white;
-  border-color: #333;
+  background-color: #ddd;
+  color: #535353;
+  border-color: #ddd;
 }
 </style>
