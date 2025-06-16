@@ -32,7 +32,7 @@ provide("pauseBGM", pause);
   --base-color: #1f1f1f;
   --base-sub-color: #1c1c1c;
   --accent-color: #B92E46;
-  --sub-accent-color: #b78575;
+  --sub-accent-color: #E8C086;
   --text-color: #d3d3d3;
   --divider-color: rgba(255, 255, 255, 0.4);
   --headline-font: "BIZ UDPGothic", sans-serif;
