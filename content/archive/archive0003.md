@@ -1,7 +1,7 @@
 ---
 archiveId: archive0003
 title: 第3回 ファミレス『ムーンパレス』へ行こう。
-description: 領国つかさおすすめのゲーム ファミレスを享受せよのプレイ配信。
+description: つか通初めてのゲーム回「ファミレスを享受せよ」、ドリンクバーのある深夜のファミレスを楽しもう。(ネタバレ注意!)
 draft: true
 date: 2025-03-01
 videoId: D2cFRAKiYSo
