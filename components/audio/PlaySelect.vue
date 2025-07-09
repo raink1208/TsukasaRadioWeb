@@ -51,7 +51,7 @@ const handleBGMOff = () => {
   align-items: center;
   overflow: hidden;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .container {
