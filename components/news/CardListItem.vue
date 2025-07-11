@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import type { NewsCollectionItem } from "@nuxt/content";
 
-const { news } = defineProps<{
-  news: NewsCollectionItem
+const { news, delay } = defineProps<{
+  news: NewsCollectionItem,
+  delay: number
 }>();
 
 const link = (newsId: string) => "/news/" + newsId;
@@ -18,9 +19,9 @@ const formatDate = (dateStr: Date): string => {
 </script>
 
 <template>
-  <article class="news-item">
+  <article class="news-item" :style="{'--delay': delay}">
     <div class="date">{{ formatDate(news.date) }}</div>
-    <span class="category">イベント</span>
+    <span class="category">{{ news.category }}</span>
     <h3 class="title">{{ news.title }}</h3>
     <p class="description">{{ news.description }}</p>
     <NuxtLink :to="link(news.newsId)" class="read-more">続きを読む</NuxtLink>
@@ -35,7 +36,7 @@ const formatDate = (dateStr: Date): string => {
   border-radius: 15px;
   padding: 20px;
   transition: all 0.3s ease;
-  animation: slideInUp 1s ease-out calc(1.5s + var(--delay, 0s)) both;
+  animation: slideInUp 1s ease-out calc(0.5s * var(--delay, 0s)) both;
 }
 
 .news-item:hover {
@@ -45,20 +46,21 @@ const formatDate = (dateStr: Date): string => {
 }
 
 .date {
-  font-size: 0.9rem;
   color: var(--sub-accent-color);
   margin-bottom: 10px;
   font-family: var(--text-font);
+  font-size: 0.9rem;
 }
 
 .category {
   display: inline-block;
-  background: rgba(185, 46, 70, 0.2);
-  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color) 60%, transparent);
+  color: var(--text-color);
   padding: 4px 12px;
   border-radius: 15px;
   margin-bottom: 15px;
   font-family: var(--text-font);
+  font-size: 0.8rem;
 }
 
 .title {
@@ -74,12 +76,12 @@ const formatDate = (dateStr: Date): string => {
 .read-more {
   color: var(--sub-accent-color);
   text-decoration: none;
-  font-weight: 500;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-family: var(--text-font);
+  font-weight: 500;
 }
 
 .read-more:hover {

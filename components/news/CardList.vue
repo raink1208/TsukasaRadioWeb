@@ -8,8 +8,8 @@ const { newsList } = defineProps<{
 
 <template>
   <div class="news-table">
-    <div v-for="news in newsList">
-      <NewsCardListItem :news="news" />
+    <div v-for="(news, index) in newsList">
+      <NewsCardListItem :news="news" :delay="index" />
     </div>
   </div>
 </template>
@@ -19,5 +19,7 @@ const { newsList } = defineProps<{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 </style>

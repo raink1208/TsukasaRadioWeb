@@ -13,6 +13,7 @@ export default defineContentConfig({
                 newsId: z.string(),
                 draft: z.boolean(),
                 date: z.date(),
+                category: z.string(),
             })
         }),
         archive: defineCollection({
