@@ -21,7 +21,7 @@ const {archiveList} = defineProps<{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 40px;
   margin-bottom: 30px;
 }

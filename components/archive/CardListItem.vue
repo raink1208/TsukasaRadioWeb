@@ -37,11 +37,10 @@ const getContentURL = (archiveId: string) => `/archive/${archiveId}`;
 <style scoped>
 .card {
   width: 100%;
-  border-radius: 10px;
-}
-
-.content {
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
 }
 
 figure {
@@ -58,40 +57,42 @@ figure .play-icon {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
-  height: 50px;
+  height: 50%;
   color: var(--text-color);
   pointer-events: none;
 }
 
-img {
+figure img {
   position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: brightness(0.7);
+  filter: brightness(0.6);
 }
 
-img:hover {
-  filter: brightness(0.9);
+figure img:hover {
+  filter: brightness(0.8);
 }
 
 .body {
-  margin-top: 20px;
+  margin: 15px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  min-height: 180px;
+  min-height: 210px;
 }
 
 .title {
   margin-left: 5px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: var(--bold-text-font);
 }
 
 .description {
-  margin-top: 16px;
+  margin-top: 15px;
+  letter-spacing: 1px;
 }
 
 .detail-button {
