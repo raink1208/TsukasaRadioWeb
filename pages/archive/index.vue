@@ -37,7 +37,7 @@ useSeoMeta({
 
 <template>
   <InnerWrapper :max-size="1500">
-    <ArchiveTagFilter v-model="selectedTag" :tags="tags" class="filter" />
+    <CommonTagFilter v-model="selectedTag" :tags="tags" class="filter" />
     <ArchiveCardList :archiveList="filteredArchiveList" />
   </InnerWrapper>
 </template>
