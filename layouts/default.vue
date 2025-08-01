@@ -3,7 +3,7 @@
 
 <template>
   <div class="wrapper">
-    <NavBar />
+    <NavContent />
     <div class="content">
       <slot />
     </div>
