@@ -35,11 +35,13 @@ useSeoMeta({
 
 <template>
   <InnerWrapper :max-size="1150">
-    <CommonTagFilter v-model="selectedCategory" :tags="categories" />
+    <CommonTagFilter v-model="selectedCategory" :tags="categories" class="filter" />
     <NewsCardList :newsList="filteredNewsList" />
   </InnerWrapper>
 </template>
 
 <style scoped>
-
+.filter {
+  margin-top: 30px;
+}
 </style>
