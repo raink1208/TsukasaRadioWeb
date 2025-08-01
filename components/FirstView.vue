@@ -26,37 +26,30 @@ watch(() => props.isVisible, async (newValue) => {
 
 <template>
   <div class="fv">
-    <div class="chara">立ち絵エリア</div>
+    <img class="background" src="/img/background.png" alt="">
     <h1 class="title">領国つかさの深夜通信-Dark Web-<br>非公式ファンサイト</h1>
   </div>
 </template>
 
 <style scoped>
 .fv {
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-color: gray;
 
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
-  overflow: hidden;
 }
 
-.chara {
+.background {
   position: absolute;
-  bottom: 0;
-  right: 6vw;
-
-  transform-origin: right;
-
-  width: 450px;
-  height: 650px;
-  display: block;
-  background-color: green;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
+
 
 .title {
   position: absolute;
