@@ -1,12 +1,13 @@
 <script setup lang="ts">
+import { useBGM } from '~/composables/useBGM';
 import BackgroundStar from '../BackgroundStar.vue';
 
 const emit = defineEmits(["hideOverlay"]);
 
-const playBGM = inject<() => void>("playBGM");
+const { play, pause, isPlaying, volume } = useBGM();
 
 const handleBGMOn = () => {
-  playBGM?.();
+  play();
   emit("hideOverlay");
 }
 
