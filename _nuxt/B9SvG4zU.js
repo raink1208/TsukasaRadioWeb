@@ -1,1 +1,0 @@
-import{_ as o}from"./C5ysDvSo.js";import{e,s,o as _,w as a,a as n,t as c,l as p,_ as r}from"./DRZKHVb3.js";const m={class:"button"},u=e({__name:"Button",props:{to:{},text:{}},setup(i){return(t,f)=>(_(),s(p(o),{to:t.to},{default:a(()=>[n("p",m,c(t.text),1)]),_:1},8,["to"]))}}),x=r(u,[["__scopeId","data-v-a0c59ec5"]]);export{x as _};
