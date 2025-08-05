@@ -12,6 +12,8 @@ const useAudio = (src: string) => {
     const audio = ref<HTMLAudioElement | null>(null);
     const isPlaying = ref(false);
     const volume = ref(0.01);
+    const current = ref(0);
+    const duration = ref(0);
 
     const play = () => {
         if (audio.value) {
@@ -35,6 +37,14 @@ const useAudio = (src: string) => {
         if (audio.value) {
             audio.value.loop = true;
             audio.value.volume = volume.value;
+
+            audio.value.addEventListener("timeupdate", () => {
+                current.value = audio.value!.currentTime;
+            })
+
+            audio.value.addEventListener("loadedmetadata", () => {
+                duration.value = audio.value!.duration;
+            })
         }
 
         watch(volume, (newVal) => {
@@ -56,6 +66,8 @@ const useAudio = (src: string) => {
         play,
         pause,
         isPlaying,
-        volume
+        volume,
+        current,
+        duration
     }
 }

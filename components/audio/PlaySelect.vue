@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useBGM } from '~/composables/useBGM';
 import BackgroundStar from '../BackgroundStar.vue';
 
 const emit = defineEmits(["hideOverlay"]);
@@ -106,9 +105,9 @@ const handleBGMOff = () => {
 }
 
 .sound-label {
-  color: var(--text-color);
+  color: var(--sub-accent-color);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 25px;
   text-transform: uppercase;
