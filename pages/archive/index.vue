@@ -37,13 +37,16 @@ useSeoMeta({
 
 <template>
   <InnerWrapper :max-size="1500">
-    <CommonTagFilter v-model="selectedTag" :tags="tags" class="filter" />
+    <h1 class="title">Archive</h1>
+    <CommonTagFilter v-model="selectedTag" :tags="tags" />
     <ArchiveCardList :archiveList="filteredArchiveList" />
   </InnerWrapper>
 </template>
 
 <style scoped>
-.filter {
-  margin-top: 20px;
+.title {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 </style>

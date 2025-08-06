@@ -3,9 +3,9 @@ import { useAsyncData } from "#app";
 
 const { data: newsList } = await useAsyncData("news", () => {
   return queryCollection("news")
-    .where("draft", "=", true)
-    .order("newsId", "DESC")
-    .all();
+      .where("draft", "=", true)
+      .order("newsId", "DESC")
+      .all();
 });
 
 const categories = computed(() => {
@@ -35,13 +35,16 @@ useSeoMeta({
 
 <template>
   <InnerWrapper :max-size="1150">
-    <CommonTagFilter v-model="selectedCategory" :tags="categories" class="filter" />
+    <h1 class="title">News</h1>
+    <CommonTagFilter v-model="selectedCategory" :tags="categories" />
     <NewsCardList :newsList="filteredNewsList" />
   </InnerWrapper>
 </template>
 
 <style scoped>
-.filter {
+.title {
   margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 </style>
