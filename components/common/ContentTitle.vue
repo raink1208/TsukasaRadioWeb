@@ -18,6 +18,7 @@ const { title } = defineProps<{
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 10px 0 30px;
 }
 
 .content-title h2 {
