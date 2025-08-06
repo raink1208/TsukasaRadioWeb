@@ -99,8 +99,6 @@ const toggleMenu = () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  z-index: 1000;
 }
 
 .menu-overlay.open {
