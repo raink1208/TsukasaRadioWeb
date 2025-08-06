@@ -41,12 +41,14 @@ const toDisplayTime = (time: number) => {
     <div class="divider"></div>
     <div class="volume-section">
       <div class="volume-label">
-        <span class="volume-icon">🔊</span>
-        <span>音量</span>
+        音量
       </div>
-      <div class="volume-slider-container">
-        <div class="volume-fill" :style="{ width: (volume * 100) + '%' }"></div>
-        <input type="range" min="0" max="1" step="0.01" v-model="volume" class="volume-slider">
+      <div class="volume-row">
+        <Icon name="material-symbols:volume-up" size="35px" />
+        <div class="volume-slider-container">
+          <div class="volume-fill" :style="{ width: (volume * 100) + '%' }"></div>
+          <input type="range" min="0" max="1" step="0.01" v-model="volume" class="volume-slider">
+        </div>
       </div>
     </div>
   </div>
@@ -142,9 +144,9 @@ const toDisplayTime = (time: number) => {
 .time-display {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-color);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .divider {
@@ -153,11 +155,10 @@ const toDisplayTime = (time: number) => {
 }
 
 .volume-label {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
@@ -166,8 +167,16 @@ const toDisplayTime = (time: number) => {
   color: var(--sub-accent-color);
 }
 
+.volume-row {
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+
 .volume-slider-container {
   position: relative;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
