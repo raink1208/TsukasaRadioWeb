@@ -52,7 +52,7 @@ watch(() => props.isVisible, async (newValue) => {
 
 <style scoped>
 .fv {
-  height: 100vh;
+  height: 100lvh;
   width: 100%;
   background-color: gray;
 
@@ -78,6 +78,10 @@ watch(() => props.isVisible, async (newValue) => {
   bottom: -30px;
   right: 0;
 
+  max-height: calc(100% + 20px);
+  max-width: 90vw;
+
+
   left: auto;
   transform: none;
 }
@@ -89,6 +93,25 @@ watch(() => props.isVisible, async (newValue) => {
 .title {
   position: absolute;
   top: 20%;
-  left: 15%;
+  left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+
+    text-align: center;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 20px;
+  }
 }
 </style>
