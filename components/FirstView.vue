@@ -98,7 +98,7 @@ watch(() => props.isVisible, async (newValue) => {
 
 @media screen and (max-width: 800px) {
   .title {
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 10px;
