@@ -68,9 +68,18 @@ watch(() => props.isVisible, async (newValue) => {
 
 .background-wrapper img {
   position: absolute;
-  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.background-wrapper .background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-wrapper .onair,.desk,.effect,.white {
+  bottom: -30px;
 }
 
 .background-wrapper .character {
