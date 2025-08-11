@@ -7,7 +7,7 @@
     <CommonContentTitle title="Cast Profile" />
     <div class="profile">
       <div class="picture">
-        <img src="/img/tsukasa.png" alt="プロフィール写真">
+        <img src="/img/tsukasa.webp" alt="プロフィール写真">
       </div>
       <div class="content">
 
