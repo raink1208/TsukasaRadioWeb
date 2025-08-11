@@ -72,15 +72,16 @@ watch(() => props.isVisible, async (newValue) => {
   transform: translateX(-50%);
 }
 
-.background-wrapper .background {
+.background-wrapper .background,.effect,.white {
   width: 100%;
-  height: 100%;
+  height: calc(100% + 30px);
   object-fit: cover;
 }
 
 .background-wrapper .onair,.desk,.effect,.white {
   bottom: -30px;
 }
+
 
 .background-wrapper .character {
   position: absolute;
