@@ -32,7 +32,7 @@ const { newsList } = defineProps<{
 }
 
 .center {
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center;
 }
 </style>
