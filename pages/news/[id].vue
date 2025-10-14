@@ -19,7 +19,7 @@ useSeoMeta({
 <template>
   <InnerWrapper :max-size="1380">
     <article v-if="news">
-      <h1>{{ news.title }}</h1>
+      <h1 class="title">{{ news.title }}</h1>
       <div class="content">
         <ContentRenderer v-if="news" :value="news" />
       </div>
@@ -33,6 +33,10 @@ useSeoMeta({
 <style scoped>
 section {
   margin-top: 100px;
+}
+
+.title {
+  margin-top: 30px;
 }
 .content {
   margin: 30px 20px 0 20px;

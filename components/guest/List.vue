@@ -1,14 +1,17 @@
 <script setup lang="ts">
-import type { Guest } from "~/domains/guest";
+import {getGuestList, type Guest} from "~/domains/guest";
 
-const { guests } = defineProps<{
-  guests: Guest[]
-}>();
+const guests = ref<Guest[]>([]);
+
+onMounted(async () => {
+  guests.value = await getGuestList();
+});
+
 </script>
 
 <template>
   <div>
-    <CommonContentTitle title="Guests" />
+    <CommonContentTitle title="Cast & Guests" />
     <div class="guest-table">
       <div class="guest-card" v-for="guest in guests" :key="guest.name">
         <GuestListItem :guest="guest" />

@@ -1,7 +1,5 @@
 <script setup lang="ts">
 
-import { getGuestList, type Guest } from "~/domains/guest";
-
 const { data: newsList } = await useAsyncData("newsLimit", () => {
   return queryCollection("news")
       .where("draft", "=", true)
@@ -9,13 +7,8 @@ const { data: newsList } = await useAsyncData("newsLimit", () => {
       .limit(5)
       .all();
 });
-const guests = ref<Guest[]>([]);
 
 const { bgmOverlay } = useBGMOverlay();
-
-onMounted(async () => {
-  guests.value = await getGuestList();
-});
 
 useSeoMeta({
   title: "領国つかさの深夜通信-Dark Web- | 非公式ファンサイト",
@@ -30,7 +23,7 @@ useSeoMeta({
   <FirstView :isVisible="!bgmOverlay" />
   <div class="bg-container">
     <BackgroundStar />
-    <section id="schedule">
+    <section id="schedule" v-if="false">
       <InnerWrapper>
         <ScheduleView />
       </InnerWrapper>
@@ -47,12 +40,7 @@ useSeoMeta({
     </section>
     <section id="cast">
       <InnerWrapper>
-        <CastProfile />
-      </InnerWrapper>
-    </section>
-    <section id="guests">
-      <InnerWrapper>
-        <GuestList :guests="guests" />
+        <GuestList />
       </InnerWrapper>
     </section>
     <section id="info">
