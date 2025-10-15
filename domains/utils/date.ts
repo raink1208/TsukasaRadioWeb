@@ -1,4 +1,4 @@
-export function toDateString(dateStr?: Date) {
+export function toDateString(dateStr?: string) {
     if (!dateStr) return;
     const date = new Date(dateStr);
     const year = date.getFullYear();
