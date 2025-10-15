@@ -41,5 +41,12 @@ export default defineNuxtConfig({
             scan: true,
             sizeLimitKb: 256,
         }
+    },
+    nitro: {
+        preset: 'cloudflare-pages',
+        prerender: {
+            crawlLinks: true,
+            routes: ['/sitemap.xml']
+        }
     }
 })
