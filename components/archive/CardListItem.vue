@@ -26,9 +26,9 @@ const getContentURL = (archiveId: string) => `/archive/${archiveId}`;
       <div class="body">
         <p class="title">{{ archive.title }}</p>
         <p class="description">{{ archive.description }}</p>
-        <div class="detail-button">
-          <CommonButton :to="getContentURL(archive.archiveId)" text="詳細を見る" />
-        </div>
+<!--        <div class="detail-button">-->
+<!--          <CommonButton :to="getContentURL(archive.archiveId)" text="詳細を見る" />-->
+<!--        </div>-->
       </div>
     </div>
   </div>
