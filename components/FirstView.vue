@@ -10,24 +10,24 @@ watch(() => props.isVisible, async (newValue) => {
     await nextTick();
     const timeline = gsap.timeline();
 
-    timeline.from(".desk", {
+    timeline.from(".fv .desk", {
       opacity: 0,
       duration: 1
-    }).from(".character", {
+    }).from(".fv .character", {
       x: '-15vw',
       opacity: 0,
       duration: 1.5
-    }).from(".onair", {
+    }).from(".fv .onair", {
       opacity: 0,
       duration: 1
-    }).from(".white", {
+    }).from(".fv .white", {
       opacity: 0,
       duration: 1
-    }, "-=0.3").from(".title", {
+    }, "-=0.3").from(".fv .title", {
       y: '80%',
       opacity: 0,
       duration: 1
-    }).from(".effect", {
+    }).from(".fv .effect", {
       opacity: 0,
       duration: 1
     }, "-=0.3");
