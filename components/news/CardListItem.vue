@@ -8,7 +8,7 @@ const { news, delay } = defineProps<{
 
 const link = (newsId: string) => "/news/" + newsId;
 
-const formatDate = (dateStr: Date): string => {
+const formatDate = (dateStr: string): string => {
   const date = new Date(dateStr);
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
